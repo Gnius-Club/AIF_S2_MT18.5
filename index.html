@@ -1,24 +1,276 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Misión 18.5 : Taller de Prototipado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 18.5 : Taller de Prototipado</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Misión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Construir, programar y probar la mecánica central (MVP) de su proyecto final.</li>
+                                        <li>Asegurar que el MVP sea robusto y funcional.</li>
+                                        <li>Experimentar un ciclo completo de desarrollo 'sprint' enfocado en una única característica.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Contexto de la sesión como un taller de construcción.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Presentación del Desafío:</strong> Énfasis en la producción y la robustez del MVP.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Guía de producción y establecimiento del rol de Xolo como co-programador.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución del sprint de construcción, codificación y depuración del MVP.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Demostración "Show, don't tell" de los MVPs funcionales.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un prototipo funcional y robusto de la mecánica de juego principal (MVP) de cada equipo, construido y probado en Delightex.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a Delightex (con entorno Python activo) para cada equipo.</li>
+                                        <li>GDDs actualizados con la sección "MVP" de la Misión 18.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar que los estudiantes tienen acceso a sus GDDs actualizados.</li>
+                                                <li>Confirmar que Xolo está listo para actuar como co-programador y supervisor, proporcionando hipótesis de depuración en lugar de soluciones directas.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Prepararse para una sesión de construcción intensiva. El rol del facilitador es supervisar, mantener el enfoque y guiar a los estudiantes a usar el protocolo de depuración cuando sea necesario.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. y Contexto de Misión ⏰ 3 minutos</h2>
+                <p>Establecer un ambiente de producción y enmarcar la sesión como la construcción de la pieza fundamental del proyecto.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta la misión: del plano a la realidad.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Arquitectos. Tienen los planos de su MVP. Hoy, dejan la mesa de diseño y entran al taller. Es una sesión de construcción pura. Su único objetivo es tomar esa 'columna vertebral' que diseñaron y hacerla real, funcional y sólida. El éxito de todo su proyecto depende de la fortaleza de esta primera pieza."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de IA y Perfil ⏰ 2 minutos</h3>
+                            <p>El facilitador da la instrucción explícita a los alumnos para que saluden a Xolo en el chat.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Activen su sesión de trabajo para la Misión 18.5, siguiendo el protocolo estándar en el chat con Xolo."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 5 minutos</h2>
+                <p>Clarificar las metas de aprendizaje y presentar la sesión como un taller de producción enfocado en la funcionalidad.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Desafío del Día ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador establece el enfoque único de la sesión: producción y robustez.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Esta es una sesión de taller intensivo. No hay nuevos conceptos. Todo el tiempo está dedicado a la producción. Tomen la sección 'MVP' de su GDD y ejecútenla. Construyan los objetos, pidan el código a Xolo, implementen y prueben. Queremos que al final de la sesión, la mecánica 'corazón' de su proyecto funcione a la perfección."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Objetivo de Aprendizaje (I Can Statement) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Al finalizar este taller, podrán afirmar con orgullo: <strong>'Mi equipo ha construido un prototipo funcional y robusto de nuestra mecánica de juego principal (MVP).'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM ⏰ 5 minutos</h2>
+                <p>Establecer el rol de Xolo como socio de producción y guiar la organización del trabajo en equipo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diálogo Conceptual con Xolo ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador instruye a los estudiantes sobre cómo recibir su guía de producción de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Iniciamos el A.I. GYM. Para maximizar la eficiencia en este 'sprint', necesitan organizarse. Consulten a su supervisor de construcción. Díganle a Xolo: <strong>'Xolo, como nuestro co-programador y supervisor, guíanos en cómo dividir el trabajo para construir nuestro MVP.'</strong> Él les sugerirá una división de tareas para que un miembro se encargue de los assets mientras otro dialoga con él para generar el código. La coordinación es clave."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
+                <p>Supervisar el sprint de desarrollo, donde los equipos construyen, programan y depuran su MVP.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Implementación del MVP y Depuración ⏰ 20 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Los equipos construyen y programan su MVP, utilizando el protocolo de depuración si surgen problemas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, al Brain Spark. Tienen 20 minutos para ejecutar su plan de MVP. Dividan el trabajo como sugirió Xolo. Un miembro coloca y prepara los assets 3D, el otro describe la arquitectura a Xolo para generar el código. Implementen y prueben. Enfóquense únicamente en el MVP. Resistan la tentación de añadir características 'bonitas'. La solidez es la prioridad. Si algo no funciona, recuerden el protocolo de depuración de la Sesión 14 para dialogar con Xolo y resolverlo."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Moderar la demostración de los MVPs funcionales bajo el principio de "Show, don't tell".</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 7) El facilitador guía una breve reflexión sobre el mayor desafío superado durante la construcción.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Tiempo. Reflexión individual. Piensen en el proceso de construcción de estos 20 minutos. ¿Cuál fue el mayor desafío que superaron como equipo para hacer que su MVP funcionara?"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Intercambio en Parejas) - 'Show, don't tell' ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) En parejas, los estudiantes hacen una demostración en vivo y silenciosa de su MVP.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"En parejas. Es la hora del 'Show, don't tell'. Hagan una demostración en vivo de su MVP a su compañero. No expliquen nada, solo muéstrenlo funcionando. La mecánica debe hablar por sí sola. Después de la demostración, pueden comentar brevemente el desafío que superaron."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Retroalimentación Estructurada) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 9) El facilitador provee una estructura para el feedback sobre la funcionalidad del MVP.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Para dar feedback, usen esta estructura: <strong>1. 'La mecánica de su MVP es clara y funciona porque...' 2. 'El desafío que superaron es interesante porque...' 3. 'Una pregunta que tengo sobre su implementación es...'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Síntesis y Cierre ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10) El facilitador concluye la sesión, celebrando el hito masivo de tener un prototipo funcional.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Han construido la base sobre la cual crecerá todo su proyecto. Tienen un prototipo funcional y probado. Esto es un hito masivo en cualquier ciclo de desarrollo. En la próxima sesión, comenzaremos a añadir las 'costillas': iteraremos y refinaremos esta base. Excelente trabajo de producción."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
